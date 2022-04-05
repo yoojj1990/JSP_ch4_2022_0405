@@ -10,7 +10,7 @@
 	<% 
 		request.setCharacterEncoding("UTF-8");
 	
-		String pname = request.getParameter("name"); //이름
+		String pid = request.getParameter("id"); //이름
 		String ppw = request.getParameter("pw"); //비밀번호
 		
 		String pgender = request.getParameter("gender"); //성별
@@ -19,10 +19,10 @@
 		
 		String pintro = request.getParameter("intro");
 		
-		//System.out.print(pname);
+		//System.out.print(pid);
 		//System.out.print(ppw);
 		
-		//out.println(pname +"님 반갑습니다.<br>");
+		//out.println(pid +"님 반갑습니다.<br>");
 		//out.println("비밀번호는 " + ppw + "입니다.<br>");
 		//out.println("당신의 성별은 [" + pgender + "]입니다.<br>");
 		
@@ -43,7 +43,7 @@
 		
 	%>
 	 
-	<%= pname %>님 반갑습니다.<br>
+	<%= pid %>님 반갑습니다.<br>
 	비밀번호는 <%= ppw %>입니다.<br>
 	당신의 성별은 [<%= pgender %>]입니다.<br>
 	당신의 취미는 :
